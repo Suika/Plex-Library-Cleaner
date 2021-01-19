@@ -22,3 +22,4 @@ COPY --from=build-stage /frontend/build/static/js /app/static/js
 RUN pip install -r /app/requirements.txt
 
 ENV MAXRESULTS 50
+ENV SORT_ORDER addedAt:desc
